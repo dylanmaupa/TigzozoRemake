@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+  transition: 0.2s ease-in-out;
+}
+* li {
+  list-style: none;
+}
+* a {
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --pri-col: #f7f7f7;
+  --sec-col: #000000;
+}
+
+.darkTheme {
+  --pri-col: #171717;
+  --sec-col: #f7f7f7;
+}
+
+body {
+  background: var(--pri-col);
+  color: var(--sec-col);
+}
+
+#nav {
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#nav .logo {
+  cursor: pointer;
+}
+#nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 50px;
+}
+#nav ul a {
+  font-size: 24px;
+  color: var(--sec-col);
+}
+#nav ul .icon {
+  cursor: pointer;
+}
+
+#hero {
+  display: flex;
+  align-items: center;
+  padding: 0 50px;
+  margin-top: 40px;
+}
+#hero .textBox {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+#hero .textBox h1 {
+  font-size: 64px;
+  line-height: 1.2;
+}
+#hero .textBox p {
+  font-size: 24px;
+  line-height: 1.2;
+}
+#hero .textBox .btns a {
+  border: 5px solid #742296;
+  padding: 10px 20px;
+  color: var(--sec-col);
+}
+#hero .textBox .btns a:hover {
+  background: #742296;
+  color: var(--pri-col);
+}
+#hero .textBox .links {
+  display: flex;
+  flex-direction: column;
+}
+#hero .imgBox {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  width: 100%;
+}
+#hero .imgBox .img {
+  width: 100%;
+}
+#hero .imgBox .img img {
+  width: 100%;
+}
+#hero .imgBox .one {
+  margin-bottom: 50px;
+}
+#hero .imgBox .two {
+  margin-top: 50px;
+}
+
+#services {
+  margin-top: 100px;
+}
+#services h2 {
+  font-size: 32px;
+}
+#services .wrapper {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+#services .wrapper .card, #services .wrapper .card2, #services .wrapper .card3 {
+  position: relative;
+  width: 25%;
+}
+#services .wrapper .card .img, #services .wrapper .card2 .img, #services .wrapper .card3 .img {
+  width: 100%;
+}
+#services .wrapper .card .img img, #services .wrapper .card2 .img img, #services .wrapper .card3 .img img {
+  width: 100%;
+}
+#services .wrapper .card .textBox, #services .wrapper .card2 .textBox, #services .wrapper .card3 .textBox {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(0deg, #000, transparent);
+  color: #fff;
+  padding: 20px;
+}
+#services .wrapper .card .textBox h3, #services .wrapper .card2 .textBox h3, #services .wrapper .card3 .textBox h3 {
+  text-align: center;
+  font-size: 28px;
+}
+#services .wrapper .card .textBox ol, #services .wrapper .card2 .textBox ol, #services .wrapper .card3 .textBox ol {
+  max-height: 0;
+  opacity: 0;
+}
+#services .wrapper .card .box, #services .wrapper .card2 .box, #services .wrapper .card3 .box {
+  width: 50px;
+  height: 40px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: #742296;
+  cursor: pointer;
+}
+#services .wrapper .cardActive .textBox {
+  background: #742296;
+  top: 0;
+}
+#services .wrapper .cardActive .textBox ol {
+  opacity: 1;
+  height: auto;
+}
+#services .wrapper .cardActive .box {
+  background: #ccc;
+}/*# sourceMappingURL=style.css.map */
